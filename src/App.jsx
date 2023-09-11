@@ -63,7 +63,7 @@ function App() {
         {
           path: "home",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <Home />
             </ProtectedRoute>
@@ -72,7 +72,7 @@ function App() {
         {
           path: "search",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <Search />
             </ProtectedRoute>
@@ -81,7 +81,7 @@ function App() {
         {
           path: "gamedetails/:id",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <GameDetails />{" "}
             </ProtectedRoute>
@@ -90,7 +90,7 @@ function App() {
         {
           path: "login",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <Login saveUserData={saveUserData} />{" "}
             </ProtectedRoute>
@@ -99,7 +99,7 @@ function App() {
         {
           path: "all",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <All saveUserData={saveUserData} />
             </ProtectedRoute>
@@ -112,162 +112,162 @@ function App() {
         {
           path: "profile",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Profile userData={userData} />
+              <Profile />
             </ProtectedRoute>
           ),
         },
         {
           path: "platforms/pc",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Pc userData={userData} />
+              <Pc />
             </ProtectedRoute>
           ),
         },
         {
           path: "platforms/browser",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Browser userData={userData} />
+              <Browser />
             </ProtectedRoute>
           ),
         },
         {
           path: "sort_by/release_date",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Release userData={userData} />
+              <Release />
             </ProtectedRoute>
           ),
         },
         {
           path: "sort_by/popularity",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Popularity userData={userData} />
+              <Popularity />
             </ProtectedRoute>
           ),
         },
         {
           path: "sort_by/alphabetical",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Alphabetical userData={userData} />
+              <Alphabetical />
             </ProtectedRoute>
           ),
         },
         {
           path: "sort_by/relevance",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Relevance userData={userData} />
+              <Relevance />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/racing",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Racing userData={userData} />
+              <Racing />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/sports",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Sports userData={userData} />
+              <Sports />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/Social",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Social userData={userData} />
+              <Social />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/Shooter",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Shooter userData={userData} />
+              <Shooter />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/open_world",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <OpenWorld userData={userData} />
+              <OpenWorld />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/zombie",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Zombie userData={userData} />
+              <Zombie />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/fantasy",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Fantasy userData={userData} />
+              <Fantasy />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/action_rpg",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <ActionRPG userData={userData} />
+              <ActionRPG />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/action",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Action userData={userData} />
+              <Action />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/flight",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Flight userData={userData} />
+              <Flight />
             </ProtectedRoute>
           ),
         },
         {
           path: "categories/battle_royal",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <BattleRoyal userData={userData} />
+              <BattleRoyal />
             </ProtectedRoute>
           ),
         },
